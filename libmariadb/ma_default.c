@@ -139,7 +139,7 @@ error:
   return NULL;
 }
 
-extern my_bool _mariadb_set_conf_option(MYSQL *mysql, const char *config_option, const char *config_value);
+extern my_bool _mariadb_set_conf_option(MYSQL *mysql, char *config_option, const char *config_value);
 
 static my_bool is_group(char *ptr, const char **groups)
 {
